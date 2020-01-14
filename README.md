@@ -1,5 +1,9 @@
 # AngularTutorial
 
+I created this project while we were in Seefeld the week before I start work.
+
+The goal of this project is to cover the 80% of Angular that I am going to use in my day to day work.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
 ## Development server
