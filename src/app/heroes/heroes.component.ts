@@ -9,14 +9,9 @@ import { HeroService } from "../hero.service";
 })
 export class HeroesComponent implements OnInit {
     heroes: Hero[];
-    selectedHero: Hero;
 
     //This will get injected with a singleton instance
     constructor(private heroService: HeroService) {}
-
-    onSelect(hero: Hero): void {
-        this.selectedHero = hero;
-    }
 
     getHeroes(): void {
         this.heroService
