@@ -29,6 +29,14 @@ export class HeroesComponent implements OnInit {
         });
     }
 
+    delete(hero: Hero): void {
+        this.heroes = this.heroes.filter(h => h !== hero);
+
+        //If you neglect to subscribe(), the service will not send the
+        //delete request to the server.As a rule, an Observable does nothing until something subscribes
+        this.heroService.deleteHero(hero).subscribe();
+    }
+
     ngOnInit() {
         this.getHeroes();
     }
