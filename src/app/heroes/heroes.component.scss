@@ -60,14 +60,18 @@ button {
     font-family: Arial;
 }
 
+button.add {
+    margin-left: 10px;
+}
+
 button:hover {
     background-color: #cfd8dc;
 }
 
 button.delete {
     position: relative;
-    left: 194px;
-    top: -32px;
+    left: 192px;
+    top: -33px;
     background-color: gray !important;
     color: white;
 }
