@@ -9,13 +9,21 @@ section {
     padding: 20px;
 
     &.links {
-        background-color: #ddd;
-        flex-grow: 1;
+        background-color: #ccc;
+
+        a {
+            width: 130px;
+            text-align: center;
+        }
     }
 
     &.content {
-        background-color: #eee;
+        background-color: #ddd;
         flex-grow: 3;
+    }
+
+    .bolder {
+        font-weight: bold;
     }
 }
 
@@ -46,7 +54,4 @@ nav a:hover {
 }
 nav a.active {
     color: #039be5;
-}
-nav a:first-child {
-    margin-right: 10px;
 }

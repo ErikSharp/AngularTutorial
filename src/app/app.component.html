@@ -1,11 +1,13 @@
 <div class="container">
     <section class="links">
-        <ul>
-            <li>
-                <a routerLink="/toh">Tour of Heroes</a>
-            </li>
-            <li><a routerLink="/else">Something Else</a></li>
-        </ul>
+        <nav>
+            <a routerLink="/toh/heroes" routerLinkActive="bolder"
+                >Tour of Heroes
+            </a>
+        </nav>
+        <nav>
+            <a routerLink="/else" routerLinkActive="bolder">Something Else </a>
+        </nav>
     </section>
     <section class="content">
         <router-outlet></router-outlet>
