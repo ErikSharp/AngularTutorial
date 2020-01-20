@@ -1,4 +1,24 @@
 /* AppComponent's private CSS styles */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+section {
+    align-items: stretch;
+    padding: 20px;
+
+    &.links {
+        background-color: #ddd;
+        flex-grow: 1;
+    }
+
+    &.content {
+        background-color: #eee;
+        flex-grow: 3;
+    }
+}
+
 h1 {
     font-size: 1.2em;
     margin-bottom: 0;
