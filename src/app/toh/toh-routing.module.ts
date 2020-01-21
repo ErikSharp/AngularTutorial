@@ -3,11 +3,13 @@ import { Routes, RouterModule } from "@angular/router";
 import { HeroesComponent } from "./heroes/heroes.component";
 import { HeroDetailComponent } from "./hero-detail/hero-detail.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { TohComponent } from "./toh.component";
 
 const heroesRoutes: Routes = [
     { path: "toh/heroes", component: HeroesComponent },
     { path: "toh/detail/:id", component: HeroDetailComponent },
-    { path: "toh/dashboard", component: DashboardComponent }
+    { path: "toh/dashboard", component: DashboardComponent },
+    { path: "toh", component: TohComponent }
 ];
 
 @NgModule({
