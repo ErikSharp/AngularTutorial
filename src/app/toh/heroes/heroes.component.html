@@ -2,10 +2,16 @@
 <div>
     <label
         >Hero name:
-        <input #heroName />
+        <!-- Had to switch to ngModel instead of this shorthand way so that the ts code could reference the variable -->
+        <!-- <input #heroName (keyup)="inputKeyUp($event)" /> -->
+        <input [(ngModel)]="heroName" (keyup)="inputKeyUp($event)" />
     </label>
     <!-- (click) passes input value to add() and then clears the input -->
-    <button class="add" (click)="add(heroName.value); heroName.value = ''">
+    <!-- This was removed for the same reason as above -->
+    <!-- <button class="add" (click)="add(heroName.value); heroName.value = ''">
+        add
+    </button> -->
+    <button class="add" (click)="add(heroName); heroName = ''">
         add
     </button>
 </div>

@@ -9,6 +9,7 @@ import { HeroService } from "../hero.service";
 })
 export class HeroesComponent implements OnInit {
     heroes: Hero[];
+    heroName = "";
 
     //This will get injected with a singleton instance
     constructor(private heroService: HeroService) {}
@@ -17,6 +18,13 @@ export class HeroesComponent implements OnInit {
         this.heroService
             .getHeroes()
             .subscribe(heroes => (this.heroes = heroes));
+    }
+
+    inputKeyUp(event): void {
+        if (event.keyCode === 13) {
+            this.add(this.heroName.trim());
+            this.heroName = "";
+        }
     }
 
     add(name: string): void {
