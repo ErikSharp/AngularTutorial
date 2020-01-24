@@ -22,8 +22,6 @@ export class HeroService {
     ) {}
 
     getHeroes(): Observable<Hero[]> {
-        this.log("fetched heroes");
-
         //of(HEROES) returns an Observable<Hero[]> that emits a single value, the array of mock heroes
         //return of(HEROES);
 
