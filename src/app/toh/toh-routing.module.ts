@@ -6,10 +6,15 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 import { TohComponent } from "./toh.component";
 
 const heroesRoutes: Routes = [
-    { path: "toh/heroes", component: HeroesComponent },
-    { path: "toh/detail/:id", component: HeroDetailComponent },
-    { path: "toh/dashboard", component: DashboardComponent },
-    { path: "toh", component: TohComponent }
+    {
+        path: "toh",
+        component: TohComponent,
+        children: [
+            { path: "", component: DashboardComponent },
+            { path: "heroes", component: HeroesComponent },
+            { path: "detail/:id", component: HeroDetailComponent }
+        ]
+    }
 ];
 
 @NgModule({

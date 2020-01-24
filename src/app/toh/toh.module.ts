@@ -6,6 +6,7 @@ import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 import { InMemoryDataService } from "./in-memory-data.service";
 import { TohRoutingModule } from "./toh-routing.module";
 import { TohComponent } from "./toh.component";
+import { MessagesComponent } from "./messages/messages.component";
 import { HeroesComponent } from "./heroes/heroes.component";
 import { HeroDetailComponent } from "./hero-detail/hero-detail.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
@@ -14,6 +15,7 @@ import { HeroSearchComponent } from "./hero-search/hero-search.component";
 @NgModule({
     declarations: [
         TohComponent,
+        MessagesComponent,
         HeroesComponent,
         HeroDetailComponent,
         DashboardComponent,

@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { catchError, map, tap } from "rxjs/operators";
 import { Hero } from "./hero";
 import { Observable, of } from "rxjs";
-import { MessageService } from "../message.service";
+import { MessageService } from "./message.service";
 
 //When you provide the service at the root level, Angular creates a single, shared instance
 @Injectable({
