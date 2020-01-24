@@ -20,6 +20,7 @@ section {
     &.content {
         background-color: #ddd;
         flex-grow: 3;
+        overflow-y: auto;
     }
 
     .bolder {
